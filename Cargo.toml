@@ -1,0 +1,33 @@
+[package]
+name = "mobile-inspector-cli"
+version = "0.1.0"
+edition = "2024"
+description = "CLI para inspeccionar el view hierarchy de apps Android (via adb) e iOS (via Appium) sin abrir Appium Inspector"
+license = "MIT"
+repository = "https://github.com/gmassello/mobile-inspector-cli"
+
+[[bin]]
+name = "mobile-inspector"
+path = "src/main.rs"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+regex = "1"
+reqwest = { version = "0.13", default-features = false, features = ["blocking", "json", "rustls"] }
+roxmltree = "0.21"
+rustyline = "18"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sxd-document = "0.3"
+sxd-xpath = "0.4"
+thiserror = "2"
+toml = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

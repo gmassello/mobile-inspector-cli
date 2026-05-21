@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppiumAUT>
+  <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="Mach" label="Mach" enabled="true" visible="true" x="0" y="0" width="390" height="844">
+    <XCUIElementTypeButton type="XCUIElementTypeButton" name="btn_continue" label="Continuar" value="" enabled="true" visible="true" x="20" y="700" width="350" height="50"/>
+    <XCUIElementTypeButton type="XCUIElementTypeButton" name="btn_cancel" label="Cancelar" value="" enabled="true" visible="true" x="20" y="620" width="350" height="50"/>
+    <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" name="txt_title" label="Pedi tu tarjeta" value="" enabled="true" visible="true" x="20" y="80" width="350" height="40"/>
+  </XCUIElementTypeApplication>
+</AppiumAUT>
